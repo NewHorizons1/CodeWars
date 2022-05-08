@@ -64,3 +64,97 @@ describe("Fixed Tests", () => {
     Test.assertEquals(past(1, 0, 0), 3600000);
   });
 });
+
+//Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+// The output should be two capital letters with a dot separating them.
+
+// It should look like this:
+
+
+//Solution:
+
+function abbrevName(name) {
+  return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+}
+
+
+//Sample tests:
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold = 0;
+
+describe("Basic tests", () => {
+  it("Testing for fixed tests", () => {
+    assert.strictEqual(abbrevName("Sam Harris"), "S.H");
+    assert.strictEqual(abbrevName("Patrick Feenan"), "P.F");
+    assert.strictEqual(abbrevName("Evan Cole"), "E.C");
+    assert.strictEqual(abbrevName("P Favuzzi"), "P.F");
+    assert.strictEqual(abbrevName("David Mendieta"), "D.M");
+  });
+});
+
+
+
+// Given a non-empty array of integers, return the result of multiplying the values together in order. Example:[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+
+//Solution:
+function grow(x) {
+  return x.reduce((a,b) => a * b, 1);
+}
+
+
+
+//Tests:
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold = 0;
+
+describe("Basic tests", () => {
+  it("Testing for fixed tests", () => {
+    assert.strictEqual(grow([1, 2, 3]), 6);
+    assert.strictEqual(grow([4, 1, 1, 1, 4]), 16);
+    assert.strictEqual(grow([2, 2, 2, 2, 2, 2]), 64);
+  });
+});
+
+
+
+//Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+
+//Solution:
+function even_or_odd(number) {
+    if(number % 2 === 0) {
+      return 'Even';
+    } else {
+      return 'Odd';
+    }
+};
+
+
+
+//Sample Tests
+const chai = require("chai");
+const assert = chai.assert;
+
+describe("Sample tests", () => {
+  it("2 is even", () => {
+    assert.strictEqual(even_or_odd(2), "Even");
+  });
+  it("7 is odd", () => {
+    assert.strictEqual(even_or_odd(7), "Odd");
+  });
+  it("-42 is even", () => {
+    assert.strictEqual(even_or_odd(-42), "Even");
+  });
+  it("-7 is odd", () => {
+    assert.strictEqual(even_or_odd(-7), "Odd");
+  });
+  it("0 is even", () => {
+    assert.strictEqual(even_or_odd(0), "Even");
+  });
+});
+
+
