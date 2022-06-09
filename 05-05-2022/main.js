@@ -5,6 +5,8 @@
 
 //Hello, Mr. Spock
 
+//Solution
 function sayHello(name){
     return `Hello, ${name}`
 }
+
