@@ -7,3 +7,5 @@ function solution(str){
 //Updated new answers
 
 //New answers made
+
+//New answers made
