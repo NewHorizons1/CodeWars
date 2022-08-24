@@ -47,3 +47,24 @@ function digitize(n) {
 function digitize(n) {
     return [...String(n)].map(Number).reverse()
 }
+
+
+//Problem
+
+// Messi is a soccer player with goals in three leagues:
+
+// LaLiga
+// Copa del Rey
+// Champions
+// Complete the function to return his total number of goals in all three leagues.
+
+// Note: the input will always be valid.
+
+// For example:
+
+
+//Solution 
+
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return goal = (laLigaGoals + copaDelReyGoals + championsLeagueGoals)
+}
