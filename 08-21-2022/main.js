@@ -14,3 +14,9 @@ function squareSum(numbers) {
     }
     return sum
 }
+
+console.log("Louis")
+console.log(3 + 6)
+console.log(3 - 6)
+console.log(3 * 6)
+console.log(3 / 6)
