@@ -68,3 +68,19 @@ function digitize(n) {
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return goal = (laLigaGoals + copaDelReyGoals + championsLeagueGoals)
 }
+
+
+
+//Problem:
+// Is the string uppercase?
+// Task
+// Create a method to see whether the string is ALL CAPS.
+
+// Examples (input -> output)
+
+
+//Solution 
+String.prototype.isUpperCase = function () {
+    return this.toString() === this.toUpperCase();
+}
+
